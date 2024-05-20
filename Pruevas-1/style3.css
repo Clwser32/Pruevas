@@ -1,0 +1,63 @@
+/* Estilos generales */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(/background.png);
+  justify-content: cover;
+  background-repeat: no-repeat;
+
+}
+.barramenu{
+  width: 100vw;
+  height: 50px;
+  background-color: rgb(13, 0, 255, 0.2);
+  
+}
+.contenedorz {
+  gap: 5px;
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  padding: 10px;
+  text-align: center;
+  flex-wrap: wrap;
+  grid-template-columns: 2;
+  gap: 5px;
+  text-align: center;
+
+}
+
+.contenedora {
+  width: calc(70% - 5px);
+  height: auto;
+  min-width: 100%;
+  background-color: rgb(13, 0, 255, 0.2);
+  border-radius: 18px;
+}
+.contenedorb {
+  
+  width: calc(70% - 5px);
+  height: auto;
+  background-color: rgb(23, 177, 26, 0.2);
+  border-radius: 18px;
+}
+.contenedorc {
+  width: 30%;
+  height: auto;
+  background-color: rgb(255, 119, 0, 0.2 );
+  border-radius: 18px;
+}
+.contenedord {
+  min-width: 100%;
+  width: 50%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(17, 154, 182, 0.2);
+  border-radius: 18px;
+}

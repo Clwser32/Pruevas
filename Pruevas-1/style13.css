@@ -1,0 +1,409 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.imagen-de-fondo {
+  width: 100%;
+  height: 500px;
+  top: 1px;
+  position: fixed;
+  z-index: -999;
+}
+.barramenu {
+  width: 100%;
+  height: 50px;
+  background-color: rgb(13, 0, 255, 0.5);
+  z-index: 10;
+}
+.barramenu2 {
+  margin-top: 5px;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(223, 9, 9, 0.5);
+  z-index: 10;
+}
+.contenedorz/*bloque padre*/ {
+  margin-top: 5px; /*separacion top*/
+  display: flex;
+  height: auto;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  flex-wrap: wrap;
+  grid-template-columns: 2;
+  gap: 5px; /*separacion interna*/
+  text-align: center;
+  background-color: rgba(127, 255, 0, 0.1);
+  padding: 5px;
+  z-index: 10;
+}
+/*Bloque A*/
+.contenedora {
+  overflow: hidden;
+  width: calc(70% - 10px);
+  height: auto;
+  min-height: 600px;
+  min-width: 100%;
+  max-width: 100%;
+  background-color: rgba(17, 6, 243, 0.8);
+  border-radius: 18px;
+  grid-area: contenedora;
+  z-index: 10;
+}
+
+/*Bloque B*/
+.contenedorb {
+  overflow: hidden;
+  width: calc(70% - 10px);
+  height: auto;
+  min-height: 600px;
+  background-color: rgb(23, 177, 26, 0.5);
+  border-radius: 18px;
+  position: relative;
+  grid-area: contenedorb;
+  display: flex;
+  z-index: 10;
+}
+
+.contetB {
+  position: relative;
+  display: flex;
+  gap: 5px;
+}
+
+.contenedor-imagen1 {
+  position: absolute;
+  background-color: #059d33;
+  width: 500px;
+  height: 300px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  top: 20px;
+  left: 230.5px;
+  cursor: pointer;
+}
+
+.contenedor-imagen2 {
+  position: absolute;
+  background-color: #9d6a05;
+  width: 225px;
+  height: 225px;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  top: 210px;
+  left: 3px;
+  cursor: pointer;
+}
+
+.contenedor-imagen3 {
+  position: absolute;
+  background-color: #30059d;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  width: 200px;
+  height: 200px;
+  top: 350px;
+  left: 184.8px;
+  cursor: pointer;
+}
+
+.contenedor-imagen4 {
+  position: absolute;
+  background-color: #9d0505;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  width: 150px;
+  height: 150px;
+  top: 350px;
+  left: 387.8px;
+  cursor: pointer;
+}
+
+.contenedor-imagen5 {
+  position: absolute;
+  background-color: #11cced;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  width: 200px;
+  height: 200px;
+  top: 350px;
+  left: 543.8px;
+  cursor: pointer;
+}
+
+.contenedor-imagen6 {
+  position: absolute;
+  margin: 0;
+  width: 225px;
+  height: 225px;
+  background-color: #19464e;
+  clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  top: 210px;
+  left: 700px;
+  cursor: pointer;
+}
+.contenedor-imagen1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contenedor-imagen2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contenedor-imagen3 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contenedor-imagen4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contenedor-imagen5 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contenedor-imagen6 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/*Bloque C*/
+.contenedorc {
+  width: 30%;
+  height: auto;
+  background-color: rgb(255, 119, 0, 0.5);
+  border-radius: 18px;
+  grid-area: contenedorc;
+  z-index: 10;
+}
+/*Bloque D*/
+.contenedord {
+  min-width: 100%;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(17, 154, 182, 0.5);
+  border-radius: 18px;
+  grid-area: contenedord;
+  z-index: 10;
+}
+/*Bloque E*/
+.contenedore {
+  min-width: 100%;
+  width: 100%;
+
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(16, 107, 126, 0.5);
+  border-radius: 18px;
+  grid-area: contenedore;
+  z-index: 10;
+  height: 50px;
+}
+/*fin contenedores*/
+
+.lrbox {
+  width: 100%;
+  height: 20px;
+  margin: auto;
+  margin-top: 100px;
+}
+.contenedor___todo {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  position: relative;
+}
+.caja__trasera {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+  background-color: rgba(0, 128, 255, 0.1);
+}
+/*divs*/
+.caja__trasera div {
+  margin: 100px 40px;
+  color: rgb(0, 0, 0);
+  transition: all 500ms;
+}
+.caja__trasera div p,
+.caja__trasera div button {
+  margin-top: 30px;
+}
+.caja__trasera div h3 {
+  font-weight: 400;
+  font-size: 26px;
+}
+.caja__trasera button {
+  padding: 10px 40px;
+  border: 2px solid rgb(0, 0, 0);
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  outline: none;
+}
+.caja__trasera button:hover {
+  background: rgb(41, 103, 177);
+  color: #ffffff;
+}
+/*formularios*/
+.contenedor__login-register {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+  top: -185px;
+  left: 10px;
+}
+.contenedor__login-register form {
+  width: 100%;
+  padding: 80px 20px;
+  background: #1f2627;
+  position: absolute;
+  border-radius: 20px;
+}
+.contenedor__login-register form h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+.contenedor__login-register form input {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background: white;
+  font-size: 16px;
+  outline: none;
+  border-radius: 20px;
+}
+.contenedor__login-register form button {
+  padding: 10px 40px;
+  margin-top: 40px;
+  border: none;
+  font-size: 14px;
+  background-color: rgba(0, 128, 255, 0.2);
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  outline: none;
+}
+
+.formulario__login {
+  opacity: 1;
+  display: block;
+}
+
+.formulario__register {
+  display: none;
+}
+/*responsive*/
+@media screen and (max-width: 850px) {
+  main {
+    margin-top: 50px;
+  }
+
+  .caja__trasera {
+    max-width: 350px;
+    height: 300px;
+    flex-direction: column;
+    margin: auto;
+  }
+
+  .caja__trasera div {
+    margin: 0px;
+    position: absolute;
+  }
+
+  /*Formularios*/
+
+  .contenedor__login-register {
+    top: -10px;
+    left: -5px;
+    margin: auto;
+  }
+
+  .contenedor__login-register form {
+    position: relative;
+  }
+}
+/*carrucel*/
+
+/*responsive's */
+@media screen and (min-width: 550px) {
+  /*bloque padre*/
+  .contenedorz {
+    width: 100vw;
+  }
+
+  /*Bloque A*/
+  .contenedora {
+    width: calc(70% - 10px);
+  }
+
+  /*Bloque B*/
+  .contenedorb {
+    width: calc(70% - 10px);
+  }
+
+  /*Bloque C*/
+  .contenedorc {
+    width: 30%;
+  }
+
+  /*Bloque D*/
+  .contenedord {
+    width: auto;
+  }
+
+  /*Bloque E*/
+  .contenedore {
+    width: auto;
+  }
+}
+
+/* Add this media query for screens with a width of less than 550px */
+@media screen and (max-width: 549px) {
+  /*bloque padre*/
+  .contenedorz {
+    width: 99vw;
+  }
+
+  /*Bloque A*/
+  .contenedora {
+    width: 100%;
+  }
+
+  /*Bloque B*/
+  .contenedorb {
+    width: 100%;
+  }
+
+  /*Bloque C*/
+  .contenedorc {
+    width: 100%;
+  }
+
+  /*Bloque D*/
+  .contenedord .contenedorc {
+    width: 100%;
+  }
+
+  /*Bloque E*/
+  .contenedore {
+    width: 100%;
+  }
+}
+/*modal categorias*/
